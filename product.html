@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Michelin Primacy 4 - SHINA.UZ</title>
+    
+    <!-- Shriftlar va stillarni to'g'ri tartibda ulash -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo">SHINA.<span>UZ</span></a>
+            <nav class="main-nav">
+                <a href="summer-tires.html">Yozgi shinalar</a>
+                <a href="winter-tires.html">Qishki shinalar</a>
+                <a href="all-season-tires.html">Barcha mavsum</a>
+                <a href="promo.html">Aksiyalar</a>
+            </nav>
+            <div class="header-actions">
+                <a href="cart.html" class="cart-link">
+                    <i class="fa fa-shopping-cart"></i> Savat <span class="cart-count">0</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="product-detail-container">
+                <div class="product-images">
+                    <img src="https://avatars.mds.yandex.net/i?id=adc28fde867fab13f6ba15c64e1d7876732c7a2f-5417440-images-thumbs&n=13" alt="Michelin shinalari" id="main-image">
+                </div>
+
+                <!-- 
+                    Yashirin .product-card o'rniga barcha ma'lumotlarni shu blokga joylaymiz.
+                    Bu toza va samarali yechim.
+                -->
+                <div class="product-info" 
+                     data-id="1" 
+
+                     data-name="Michelin Primacy 4" 
+                     data-price="1250000" 
+                     data-image="https://avatars.mds.yandex.net/i?id=adc28fde867fab13f6ba15c64e1d7876732c7a2f-5417440-images-thumbs&n=13">
+                    
+                    <h1>Michelin Primacy 4</h1>
+                    <div class="price detail-price">1 250 000 so'm / dona</div>
+                    
+                    <table class="specs-table">
+                        <tr><td>Brend:</td><td><strong>Michelin</strong></td></tr>
+                        <tr><td>Mavsum:</td><td><strong>Yozgi</strong></td></tr>
+                        <tr><td>O'lchami:</td><td><strong>205 / 55 R16</strong></td></tr>
+                        <tr><td>Yuklama indeksi:</td><td><strong>91 (615 kg)</strong></td></tr>
+                        <tr><td>Tezlik indeksi:</td><td><strong>V (240 km/s gacha)</strong></td></tr>
+                    </table>
+
+                    <div class="compatibility-block">
+                        <h4><i class="fa fa-car"></i> Bu shina qaysi avtolarga mos keladi?</h4>
+                        <p>O'lcham: <strong>205 / 55 R16</strong></p>
+                        <p>Ommabop modellar: Chevrolet Lacetti, Hyundai Elantra, Kia Cerato va boshqalar.</p>
+                        <button id="show-compatibility-modal" class="btn-secondary">Batafsil ro'yxat</button>
+                    </div>
+
+                    <div class="quantity-selector">
+                        <label for="quantity">Miqdori:</label>
+                        <input type="number" id="quantity" value="4" min="1">
+                    </div>
+
+                    <button class="add-to-cart-btn large-btn"><i class="fa fa-shopping-cart"></i> Savatga qo'shish</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+   <footer class="site-footer">
+       <div class="container">
+           <div class="footer-grid">
+               <div class="footer-col">
+                   <h4>SHINA.<span>UZ</span></h4>
+                   <p>O'zbekistondagi eng yirik shina va diskalar onlayn-do'koni. Sifatli mahsulotlar va a'lo darajadagi servis.</p>
+               </div>
+               <div class="footer-col">
+                   <h4>Havolalar</h4>
+                   <ul>
+                       <!-- Footer havolalari to'g'rilandi -->
+                       <li><a href="about.html">Biz haqimizda</a></li>
+                       <li><a href="delivery.html">Yetkazib berish</a></li>
+                       <li><a href="payment.html">To'lov usullari</a></li>
+                       <li><a href="contact.html">Aloqa</a></li>
+                   </ul>
+               </div>
+               <div class="footer-col">
+                   <h4>Aloqa</h4>
+                   <ul class="contact-list">
+                       <li><i class="fa fa-map-marker-alt"></i> Toshkent sh, Amir Temur ko'chasi, 100</li>
+                       <li><i class="fa fa-phone"></i> +998 71 200-00-00</li>
+                       <li><i class="fa fa-envelope"></i> info@shina.uz</li>
+                   </ul>
+               </div>
+               <div class="footer-col">
+                   <h4>Ijtimoiy tarmoqlar</h4>
+                   <div class="social-links">
+                       <a href="#"><i class="fab fa-telegram"></i></a>
+                       <a href="#"><i class="fab fa-instagram"></i></a>
+                       <a href="#"><i class="fab fa-facebook-f"></i></a>
+                   </div>
+               </div>
+           </div>
+           <div class="footer-bottom">
+               <p>&copy; 2024 SHINA.UZ. Barcha huquqlar himoyalangan.</p>
+           </div>
+       </div>
+    </footer>
+
+    <!-- Modal oyna (o'zgarishsiz) -->
+ 
+ <script src="js/common.js"></script>
+<script src="js/product-page.js"></script>
+</body>
+</html>

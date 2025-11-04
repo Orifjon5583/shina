@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buyurtmani rasmiylashtirish - SHINA.UZ</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo">SHINA.<span>UZ</span></a>
+            <nav class="main-nav">
+                <a href="summer-tires.html">Yozgi shinalar</a>
+                <a href="winter-tires.html">Qishki shinalar</a>
+                <a href="all-season-tires.html">Barcha mavsum</a>
+                <a href="promo.html">Aksiyalar</a>
+            </nav>
+            <div class="header-actions">
+                <a href="cart.html"><i class="fa fa-shopping-cart"></i> Savat</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <h1 class="page-title">Buyurtmani rasmiylashtirish</h1>
+
+            <div class="checkout-container">
+                <!-- Foydalanuvchi ma'lumotlari formasi -->
+                <div class="customer-details">
+                    <h3>1. Aloqa ma'lumotlari</h3>
+                    <form id="checkout-form">
+                        <div class="form-group">
+                            <label for="full_name">Ism, Familiya</label>
+                            <input type="text" id="full_name" placeholder="To'liq ismingizni kiriting" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone_number">Telefon raqam</label>
+                            <input type="tel" id="phone_number" placeholder="+998 XX XXX-XX-XX" required>
+                        </div>
+                        
+                        <h3>2. Yetkazib berish manzili</h3>
+                        <div class="form-group">
+                            <label for="city">Shahar</label>
+                            <select id="city">
+                                <option>Toshkent</option>
+                                <option>Samarqand</option>
+                                <option>Buxoro</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="address">Manzil</label>
+                            <input type="text" id="address" placeholder="Ko'cha, uy, xonadon" required>
+                        </div>
+                         <div class="form-group">
+                            <label for="comment">Buyurtma uchun izoh (ixtiyoriy)</label>
+                            <textarea id="comment" rows="4" placeholder="Qo'shimcha ma'lumotlar (masalan, yetkazib berish vaqti)"></textarea>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Buyurtma xulosasi (savatdan olingan) -->
+                <div class="order-summary">
+                    <h2>Sizning buyurtmangiz</h2>
+                    <div class="summary-item">
+                        <span>1. Michelin Primacy 4 (x4)</span>
+                        <span class="price">5 000 000 so'm</span>
+                    </div>
+                    <div class="summary-item">
+                        <span>2. Goodyear UltraGrip (x2)</span>
+                        <span class="price">3 200 000 so'm</span>
+                    </div>
+                    <hr>
+                    <div class="summary-total">
+                        <span>Jami to'lov:</span>
+                        <span class="price">8 200 000 so'm</span>
+                    </div>
+                    <button class="checkout-btn" type="submit" form="checkout-form">BUYURTMANI TASDIQLASH</button>
+                    <p class="privacy-policy">Tugmani bosish orqali siz saytning <a href="#">foydalanish shartlariga</a> rozilik bildirasiz.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <!-- ... footer qismi ... -->
+        <div class="container"> <div class="footer-grid"> <div class="footer-col"> <h4>SHINA.<span>UZ</span></h4> <p>O'zbekistondagi eng yirik shina va diskalar onlayn-do'koni. Sifatli mahsulotlar va a'lo darajadagi servis.</p> </div> <div class="footer-col"> <h4>Havolalar</h4> <ul> <li><a href="about.html">Biz haqimizda</a></li> <li><a href="delivery.html">Yetkazib berish</a></li> <li><a href="payment.html">To'lov usullari</a></li> <li><a href="contact.html">Aloqa</a></li> </ul> </div> <div class="footer-col"> <h4>Aloqa</h4> <ul class="contact-list"> <li><i class="fa fa-map-marker-alt"></i> Toshkent sh, Amir Temur ko'chasi, 100</li> <li><i class="fa fa-phone"></i> +998 71 200-00-00</li> <li><i class="fa fa-envelope"></i> info@shina.uz</li> </ul> </div> <div class="footer-col"> <h4>Ijtimoiy tarmoqlar</h4> <div class="social-links"> <a href="#"><i class="fab fa-telegram"></i></a> <a href="#"><i class="fab fa-instagram"></i></a> <a href="#"><i class="fab fa-facebook-f"></i></a> </div> </div> </div> <div class="footer-bottom"> <p>&copy; 2024 SHINA.UZ. Barcha huquqlar himoyalangan.</p> </div> </div>
+    </footer>
+    
+<script src="js/common.js"></script>
+</body>
+</html>
