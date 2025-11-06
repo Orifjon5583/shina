@@ -253,3 +253,118 @@ main { padding: 50px 0; }
     .filter-form, .cart-container, .checkout-container { flex-direction: column; }
     .cart-summary, .order-summary { position: static; width: 100%; box-sizing: border-box; }
 }
+/* ==========================================================================
+   ADAPTIVLIK (RESPONSIVE DESIGN)
+   ========================================================================== */
+
+/* --- Planshetlar uchun (masalan, 992px gacha) --- */
+@media (max-width: 992px) {
+    .container {
+        padding: 0 20px;
+    }
+    .main-nav {
+        display: none; /* Keyinchalik "burger menyu" uchun joy ochadi */
+    }
+    .hero-content h1 {
+        font-size: 2.8em;
+    }
+    .tire-filter .container {
+        padding: 0; /* Filtr blokini ekranga yoyish uchun */
+    }
+    .filter-form {
+        flex-direction: column;
+        align-items: stretch; /* Elementlarni to'liq kenglikka yoyish */
+    }
+    .find-btn {
+        margin-top: 10px;
+    }
+    .features-section .container {
+        grid-template-columns: 1fr; /* Xizmatlarni ustma-ust joylash */
+    }
+    .product-grid {
+        grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); /* Kartochkalarni biroz kichraytirish */
+    }
+    .product-detail-container {
+        flex-direction: column; /* Mahsulot rasmi va ma'lumotlarini ustma-ust joylash */
+    }
+    .cart-container, .checkout-container {
+        flex-direction: column;
+    }
+    .cart-summary, .order-summary {
+        position: static; /* Xulosa blokini pastga tushirish */
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .footer-grid {
+        grid-template-columns: 1fr 1fr; /* Footer ustunlarini 2x2 qilish */
+        gap: 30px;
+    }
+    .contact-page-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* --- Katta telefonlar uchun (masalan, 768px gacha) --- */
+@media (max-width: 768px) {
+    header .container {
+        padding: 0 15px;
+    }
+    .hero-content h1 {
+        font-size: 2.2em;
+    }
+    .hero-content p {
+        font-size: 1em;
+    }
+    .car-selector-grid, .filter-form {
+        grid-template-columns: 1fr; /* Barcha filtrlarni ustma-ust joylash */
+    }
+    .product-grid {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+    .footer-grid {
+        grid-template-columns: 1fr; /* Footer ustunlarini ustma-ust joylash */
+    }
+    .footer-col {
+        text-align: center;
+    }
+    .social-links {
+        justify-content: center;
+        display: flex;
+    }
+}
+
+/* --- Kichik telefonlar uchun (masalan, 480px gacha) --- */
+@media (max-width: 480px) {
+    body {
+        font-size: 14px; /* Umumiy shrift hajmini biroz kichraytirish */
+    }
+    .logo {
+        font-size: 24px;
+    }
+    .hero-content h1 {
+        font-size: 1.8em;
+    }
+    .product-grid {
+        /* Ikkita kartani sig'dirish uchun */
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+    }
+    .product-card {
+        padding: 10px;
+    }
+    .product-card h3 {
+        font-size: 16px;
+        height: auto; /* Balandlikni avtomatik qilish */
+    }
+    .price {
+        font-size: 18px;
+    }
+    .cart-item {
+        flex-direction: column;
+        align-items: flex-start; /* Savatdagi elementlarni ustma-ust joylash */
+    }
+    .item-total {
+        width: auto;
+        margin-top: 10px;
+    }
+}
